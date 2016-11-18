@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bk:Library xmlns:bk="http://www.techlib.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.techlib.com g:\WSAD\workspace\XMLSamplesProject\Library.xsd">
+  <bk:Book PublishYear="1997">
+    <BookTitle>The Java 1.1 Programmer's Reference</BookTitle>
+    <Author>
+      <FirstName>Daniel</FirstName>
+      <MiddleName>I.</MiddleName>
+      <LastName>Joshi</LastName>
+    </Author>
+    <Author>
+    	<FirstName>Pavel</FirstName>
+    	<MiddleName>A.</MiddleName>
+    	<LastName>Vorobiev</LastName>
+    </Author>
+  </bk:Book>
+  <bk:Book PublishYear="1999">
+  	<BookTitle>Java in a Nutshell</BookTitle>
+  	<Author>
+  		<FirstName>David</FirstName>
+  		<LastName>Flanagan</LastName>
+  	</Author>
+  </bk:Book>
+</bk:Library>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmlns:classloader="http://www.ibm.com/websphere/appserver/schemas/5.0/classloader.xmi">
+  <xmi:Documentation>
+    <contact>{Your Contact Info}</contact>
+  </xmi:Documentation>
+  <appdeployment:Deployment xmi:id="Deployment_1">
+    <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1" startingWeight="10" binariesURL="${WS_EAR_IBMUTC}" useMetadataFromBinaries="true" warClassLoaderPolicy="MULTIPLE">
+      <targetMappings xmi:id="DeploymentTargetMapping_1" enable="true"/>
+      <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1" startingWeight="10000" uri="UTC.war">
+        <targetMappings xmi:id="DeploymentTargetMapping_2" target="ServerTarget_1"/>
+      </modules>
+      <classloader xmi:id="Classloader_1" mode="PARENT_FIRST"/>
+    </deployedObject>
+    <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1" name="server1" nodeName="localhost"/>
+  </appdeployment:Deployment>
+</xmi:XMI>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM WebSphere Studio">
+
+<TITLE>Register New Book</TITLE>
+
+<!--Styles-->
+<!--Styles-->
+<STYLE type="text/css">
+<!--
+H1 {
+	text-align: center !IMPORTANT;
+}
+
+TH {
+	text-align: left !IMPORTANT;
+	vertical-align: top !IMPORTANT;
+}
+
+TD {
+	text-align: left !IMPORTANT;
+	vertical-align: top !IMPORTANT;
+}
+
+TH.result {
+	background-color: #999999 !IMPORTANT;
+}
+
+TD.result {
+	background-color: #cccccc;
+	vertical-align: top !IMPORTANT;
+}
+-->
+</STYLE>
+
+
+</HEAD>
+
+<BODY>
+<!--Java Script-->
+<SCRIPT language="JavaScript" type="text/javascript">
+<!--
+	
+	function submitForm()
+     {
+      document.myForm.submit()
+     }
+	 
+	
+	function checkCatalogNumber()
+     {
+ 		if(document.myForm.catalogNumber.value.length < 5)
+   	     {
+   	       alert("Catalog number is a 5-character field")
+           
+           return(false)
+         }
+        else
+         {
+          return(true)
+         }
+     }
+
+    
+    function checkBookTitle()
+     {
+      if(document.myForm.bookTitle.value.length < 1)
+       {
+        alert("Enter Book title data")
+        
+        return(false)
+       }
+      else
+       {
+        return(true)
+       }
+     }
+
+    function checkAuthor()
+     {
+      if(document.myForm.author.value.length < 1)
+       {
+        alert("Enter Book author data")
+       
+        return(false)
+       }
+      else
+       {
+        return(true)
+       }
+     }
+
+    
+    function checkLocation()
+     {
+      if(document.myForm.location.value.length < 1)
+       {
+        alert("Enter Book location data")
+        
+        return(false)
+       }
+      else
+       {
+        return(true)
+       }
+     }
+
+    function checkPlatform()
+     {
+      if(document.myForm.platform.value.length < 2)
+       {
+        alert("Enter Development platform data (two-character field)")
+       
+        return(false)
+       }
+      else
+       {
+        return(true)
+       }
+     }
+
+    function checkLanguage()
+     {    
+      if(document.myForm.language.value.length < 2)
+       {
+        alert("Enter Programming language data (two-character field)")
+        
+        return(false)
+       }
+      else
+       {
+        return(true)
+       }
+    }
+	 
+//-->
+</SCRIPT>
+
+
+
+
+
+
+
+<!--Banner-->
+<H1>Register New Book</H1>
+
+<!--Form-->
+<FORM name="myForm" method="POST" action="BookRegisterController">
+
+<INPUT type="hidden" name="command" value="BookRegisterResults"> <BR>
+
+<!--Input Fields-->
+<TABLE border="0">
+	<TBODY>
+		<TR>
+			<TH width="109">Catalog number</TH>
+			<TD width="307"><INPUT name='catalogNumber' type='text' size='5' maxlength='5'
+				tabindex="1" ></TD>
+		</TR>
+		<TR>
+			<TH width="109">Book title</TH>
+			<TD width="307"><INPUT name='bookTitle' type='text' size='50' maxlength='100'
+				tabindex="2" onMousein="checkBookCatalog()" onfocus="checkCatalogNumber()"></TD>
+		</TR>
+		<TR>
+			<TH width="109">Author</TH>
+			<TD width="307"><INPUT name='author' type='text' size='50' maxlength='100'
+				tabindex="3" onfocus="checkBookTitle()"></TD>
+		</TR>
+		<TR>
+			<TH width="109">Location</TH>
+			<TD width="307"><INPUT name='location' type='text' size='50' maxlength='50'
+				tabindex="4" onfocus="checkAuthor()"></TD>
+		</TR>
+		<TR>
+			<TH width="109">Platform</TH>
+			<TD width="307"><INPUT name='platform' type='text' size='2' maxlength='2'
+				tabindex="5" onfocus="checkLocation()"></TD>
+		</TR>
+		<TR>
+			<TH width="109" height="22">Language</TH>
+			<TD width="307" height="22"><INPUT name='language' type='text' size='2' maxlength='2'
+				tabindex="6" onmouseout="checkLanguage()" onfocus="checkPlatform()"></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
+<!--Hidden Fields--><BR>
+<INPUT type="submit" name="Submit" value="Submit">
+<INPUT type="reset" value="Reset"> <BR>
+</FORM>
+</BODY>
+</HTML>

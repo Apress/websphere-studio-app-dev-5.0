@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:variables="http://www.ibm.com/websphere/appserver/schemas/5.0/variables.xmi">
+  <xmi:Documentation>
+    <contact>{Your Contact Info}</contact>
+  </xmi:Documentation>
+  <variables:VariableMap xmi:id="VariableMap_1">
+    <entries xmi:id="VariableSubstitutionEntry_1" symbolicName="WAS_INSTALL_ROOT" value="${WAS_INSTALL_ROOT_PATH_MAP}" description="The filesystem path to the WebSphere product installation directory."/>
+    <entries xmi:id="VariableSubstitutionEntry_2" symbolicName="USER_INSTALL_ROOT" value="${WAS_INSTALL_ROOT}" description="The filesystem path to the user installaton directory."/>
+    <entries xmi:id="VariableSubstitutionEntry_3" symbolicName="WAS_LIBS_DIR" value="${WAS_INSTALL_ROOT}/lib" description="The filesystem path to the product lib directory."/>
+    <entries xmi:id="VariableSubstitutionEntry_4" symbolicName="WAS_PROPS_DIR" value="${USER_INSTALL_ROOT}/properties" description="The filesystem path to the product properties directory."/>
+    <entries xmi:id="VariableSubstitutionEntry_5" symbolicName="WAS_TEMP_DIR" value="${WAS_TEMP_DIR_PATH_MAP}" description="The filesystem path to the product temp directory."/>
+    <entries xmi:id="VariableSubstitutionEntry_6" symbolicName="APP_INSTALL_ROOT" value="${APP_INSTALL_ROOT_PATH_MAP}" description="The filesystem path to the directory which will contain installed enterprise applications."/>
+    <entries xmi:id="VariableSubstitutionEntry_7" symbolicName="LOG_ROOT" value="${SERVER_TEMP_DIR_PATH_MAP}/logs" description="The filesystem path to the directory which will contain server log files."/>
+    <entries xmi:id="VariableSubstitutionEntry_8" symbolicName="DRIVER_PATH" value="${WAS_INSTALL_ROOT}" description="The filesystem path to the directory which will contain drivers."/>
+    <entries xmi:id="VariableSubstitutionEntry_9" symbolicName="JAVA_HOME" value="${WAS_INSTALL_ROOT}/java" description="The filesystem path to the Java Virtual Machine installation directory."/>
+    <entries xmi:id="VariableSubstitutionEntry_10" symbolicName="MQ_INSTALL_ROOT" value="${WAS_INSTALL_ROOT}/mqjms" description="The filesystem path to the installation directory for MQSeries."/>
+    <entries xmi:id="VariableSubstitutionEntry_11" symbolicName="WAS_PUBSUB_ROOT" value="" description="The filesystem path to the installation directory for WebSphere Embedded Publish and Subscribe."/>
+    <entries xmi:id="VariableSubstitutionEntry_12" symbolicName="DEPLOY_TOOL_ROOT" value="${WAS_INSTALL_ROOT}/deploytool/itp" description="The filesystem path to the installation directory for WebSphere EJB Deployment tool."/>
+    <entries xmi:id="VariableSubstitutionEntry_13" symbolicName="CONNECTOR_INSTALL_ROOT" value="${USER_INSTALL_ROOT}/installedConnectors" description="The filesystem path to the directory which will contain installed connectors."/>
+    <entries xmi:id="VariableSubstitutionEntry_14" symbolicName="TRANLOG_ROOT" value="${SERVER_TEMP_DIR_PATH_MAP}/tranlog" description="The filesystem path to the directory which will contain transaction log files."/>
+    <entries xmi:id="VariableSubstitutionEntry_15" symbolicName="MQJMS_LIB_ROOT" value="${MQ_INSTALL_ROOT}/java/lib" description="The filesystem path to the MQSeries lib directory."/>
+    <entries xmi:id="VariableSubstitutionEntry_16" symbolicName="WAS_ETC_DIR" value="${USER_INSTALL_ROOT}/etc" description="The filesystem path to the directory which will contain etc config files."/>
+    <entries xmi:id="VariableSubstitutionEntry_17" symbolicName="User-defined_JDBC_DRIVER_PATH" value="" description="The directory where contains the dirver from Custom JDBC2.0-compliant Provider."/>
+    <entries xmi:id="VariableSubstitutionEntry_18" symbolicName="DB2_JDBC_DRIVER_PATH" value="" description="The directory where contains the driver from DB2 JDBC2-compliant Provider."/>
+    <entries xmi:id="VariableSubstitutionEntry_19" symbolicName="DB2AS400_JDBC_DRIVER_PATH" value="" description="The directory where contains the driver from IBM Developer Kit for Java JDBC Driver for local DB2 connections on iSeries.."/>
+    <entries xmi:id="VariableSubstitutionEntry_20" symbolicName="DB2AS400_TOOLBOX_JDBC_DRIVER_PATH" value="" description="The directory where contains the driver from IBM Toolbox for Java JDBC Driver for remote DB2 connections on iSeries."/>
+    <entries xmi:id="VariableSubstitutionEntry_21" symbolicName="DB2390_JDBC_DRIVER_PATH" value="" description="The directory where DB2/390 JDBC2-compliant Provider."/>
+    <entries xmi:id="VariableSubstitutionEntry_22" symbolicName="CLOUDSCAPE_JDBC_DRIVER_PATH" value="${WAS_LIBS_DIR}" description="The directory where contains the driver from Cloudscape JDBC2-compliant Provider."/>
+    <entries xmi:id="VariableSubstitutionEntry_23" symbolicName="INFORMIX_JDBC_DRIVER_PATH" value="" description="The directory where contains the driver from Informix JDBC Provider."/>
+    <entries xmi:id="VariableSubstitutionEntry_24" symbolicName="SYBASE_JDBC_DRIVER_PATH" value="" description="The directory where contains the driver from Sybase 12.0 JDBC Driver."/>
+    <entries xmi:id="VariableSubstitutionEntry_25" symbolicName="ORACLE_JDBC_DRIVER_PATH" value="" description="The directory where contains the driver from Oracle JDBC Thin Driver."/>
+    <entries xmi:id="VariableSubstitutionEntry_26" symbolicName="CONNECTJDBC_JDBC_DRIVER_PATH" value="" description="The directory where contains the driver from DataDirect ConnectJDBC type 4 driver for MS SQL Server."/>
+    <entries xmi:id="VariableSubstitutionEntry_27" symbolicName="MSSQLSERVER_JDBC_DRIVER_PATH" value="" description="The directory where contains the driver from Microsoft JDBC driver for MSSQLServer 2000."/>
+  </variables:VariableMap>
+</xmi:XMI>

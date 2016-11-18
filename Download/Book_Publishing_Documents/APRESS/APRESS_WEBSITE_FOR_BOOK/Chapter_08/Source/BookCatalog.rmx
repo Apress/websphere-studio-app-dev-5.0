@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping:MappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Mapping="Mapping.xmi" xmlns:RDBSchema="RDBSchema.xmi" xmlns:XML="XML.xmi" xmi:id="MappingRoot_1044722089346" outputReadOnly="true" topToBottom="true">
+  <nested xmi:id="Mapping_1044723548704">
+    <inputs xmi:type="RDBSchema:RDBColumn" href="WEB-INF/databases/Con1_TECHBOOK_LIB_BOOK_CATALOG.tblxmi#RDBColumn_1044665902042"/>
+    <outputs xmi:type="XML:XMLElement" href="platform:/resource/dtd/BookCatalog.dtd.BookCatalog.dtdxml#1:BookCatalog.1:Book:1/1.1:CatalogNumber:1/1"/>
+  </nested>
+  <nested xmi:id="Mapping_1044723548714">
+    <inputs xmi:type="RDBSchema:RDBColumn" href="WEB-INF/databases/Con1_TECHBOOK_LIB_BOOK_CATALOG.tblxmi#RDBColumn_1044665902043"/>
+    <outputs xmi:type="XML:XMLElement" href="platform:/resource/dtd/BookCatalog.dtd.BookCatalog.dtdxml#1:BookCatalog.1:Book:1/1.1:Author:1/1"/>
+  </nested>
+  <nested xmi:id="Mapping_1044723548715">
+    <inputs xmi:type="RDBSchema:RDBColumn" href="WEB-INF/databases/Con1_TECHBOOK_LIB_BOOK_CATALOG.tblxmi#RDBColumn_1044665902052"/>
+    <outputs xmi:type="XML:XMLElement" href="platform:/resource/dtd/BookCatalog.dtd.BookCatalog.dtdxml#1:BookCatalog.1:Book:1/1.1:BookTitle:1/1"/>
+  </nested>
+  <nested xmi:id="Mapping_1044723548716">
+    <inputs xmi:type="RDBSchema:RDBColumn" href="WEB-INF/databases/Con1_TECHBOOK_LIB_BOOK_CATALOG.tblxmi#RDBColumn_1044665902053"/>
+    <outputs xmi:type="XML:XMLElement" href="platform:/resource/dtd/BookCatalog.dtd.BookCatalog.dtdxml#1:BookCatalog.1:Book:1/1.1:Location:1/1"/>
+  </nested>
+  <nested xmi:id="Mapping_1044723548717">
+    <inputs xmi:type="RDBSchema:RDBColumn" href="WEB-INF/databases/Con1_TECHBOOK_LIB_BOOK_CATALOG.tblxmi#RDBColumn_1044665902054"/>
+    <outputs xmi:type="XML:XMLElement" href="platform:/resource/dtd/BookCatalog.dtd.BookCatalog.dtdxml#1:BookCatalog.1:Book:1/1.1:Platform:1/1"/>
+  </nested>
+  <nested xmi:id="Mapping_1044723548718">
+    <inputs xmi:type="RDBSchema:RDBColumn" href="WEB-INF/databases/Con1_TECHBOOK_LIB_BOOK_CATALOG.tblxmi#RDBColumn_1044665902055"/>
+    <outputs xmi:type="XML:XMLElement" href="platform:/resource/dtd/BookCatalog.dtd.BookCatalog.dtdxml#1:BookCatalog.1:Book:1/1.1:Language:1/1"/>
+  </nested>
+  <inputs xmi:type="RDBSchema:RDBTable" href="WEB-INF/databases/Con1_TECHBOOK_LIB_BOOK_CATALOG.tblxmi#RDBTable_1044665902042"/>
+  <outputs xmi:type="XML:XMLDocument" href="platform:/resource/dtd/BookCatalog.dtd.BookCatalog.dtdxml#9"/>
+</Mapping:MappingRoot>

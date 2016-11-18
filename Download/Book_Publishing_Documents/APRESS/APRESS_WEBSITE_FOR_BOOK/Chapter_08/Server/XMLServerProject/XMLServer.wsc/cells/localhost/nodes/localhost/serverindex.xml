@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:serverindex="http://www.ibm.com/websphere/appserver/schemas/5.0/serverindex.xmi" xmlns:ipc="http://www.ibm.com/websphere/appserver/schemas/5.0/ipc.xmi">
+  <xmi:Documentation>
+    <contact>{Your Contact Info}</contact>
+  </xmi:Documentation>
+  <serverindex:ServerIndex xmi:id="ServerIndex_1" hostName="localhost">
+    <serverEntries xmi:id="ServerEntry_1" serverDisplayName="server1" serverName="server1" serverType="APPLICATION_SERVER">
+      <deployedApplications>IBMUTC.ear/deployments/IBMUTC</deployedApplications>
+      <deployedApplications>XMLProjectApp.ear/deployments/XMLProjectApp</deployedApplications>
+      <specialEndpoints xmi:id="NamedEndPoint_1" endPointName="BOOTSTRAP_ADDRESS">
+        <endPoint xmi:id="EndPoint_1" host="localhost" port="2809"/>
+      </specialEndpoints>
+      <specialEndpoints xmi:id="NamedEndPoint_2" endPointName="SOAP_CONNECTOR_ADDRESS">
+        <endPoint xmi:id="EndPoint_2" host="localhost" port="8880"/>
+      </specialEndpoints>
+      <specialEndpoints xmi:id="NamedEndPoint_3" endPointName="DRS_CLIENT_ADDRESS">
+        <endPoint xmi:id="EndPoint_3" host="localhost" port="7873"/>
+      </specialEndpoints>
+      <specialEndpoints xmi:id="NamedEndPoint_4" endPointName="JMSSERVER_QUEUED_ADDRESS">
+        <endPoint xmi:id="EndPoint_4" host="localhost" port="5558"/>
+      </specialEndpoints>
+      <specialEndpoints xmi:id="NamedEndPoint_5" endPointName="JMSSERVER_DIRECT_ADDRESS">
+        <endPoint xmi:id="EndPoint_5" host="localhost" port="5559"/>
+      </specialEndpoints>
+      <specialEndpoints xmi:id="NamedEndPoint_6" endPointName="SAS_SSL_SERVERAUTH_LISTENER_ADDRESS">
+        <endPoint xmi:id="EndPoint_6" host="localhost" port="0"/>
+      </specialEndpoints>
+      <specialEndpoints xmi:id="NamedEndPoint_7" endPointName="CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS">
+        <endPoint xmi:id="EndPoint_7" host="localhost" port="0"/>
+      </specialEndpoints>
+      <specialEndpoints xmi:id="NamedEndPoint_8" endPointName="CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS">
+        <endPoint xmi:id="EndPoint_8" host="localhost" port="0"/>
+      </specialEndpoints>
+    </serverEntries>
+  </serverindex:ServerIndex>
+</xmi:XMI>

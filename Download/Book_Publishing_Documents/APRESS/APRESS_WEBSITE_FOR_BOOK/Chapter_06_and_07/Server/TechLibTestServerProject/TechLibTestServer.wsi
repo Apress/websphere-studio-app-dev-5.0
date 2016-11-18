@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webSphere-instance
+   INSTANCE_CONFIG_REF="/TechLibTestServerProject/TechLibTestServer.wsc"
+   INSTANCE_DEBUG_PORT_NUM_ID="-1"
+   INSTANCE_EXTRA_WS_EXT_DIRS_APPEND_FLAG_ID="0"
+   INSTANCE_FILE_KEY="WebSphere v5.0 Test Environment Server"
+   INSTANCE_JSP_SRC_DEBUG_ID="true" bsfDebug="false"
+   name="TechLibTestServer" server-type="3">
+   <configuration-ref ref="/TechLibTestServerProject/TechLibTestServer.wsc"/>
+   <classpath/>
+   <system-properties/>
+   <vm-arguments/>
+   <wsExtDirs/>
+</webSphere-instance>

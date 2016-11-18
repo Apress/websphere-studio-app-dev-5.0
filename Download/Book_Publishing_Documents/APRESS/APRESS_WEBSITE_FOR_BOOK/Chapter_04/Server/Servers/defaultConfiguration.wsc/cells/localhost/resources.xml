@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resources.jms="http://www.ibm.com/websphere/appserver/schemas/5.0/resources.jms.xmi" xmlns:resources.j2c="http://www.ibm.com/websphere/appserver/schemas/5.0/resources.j2c.xmi" xmlns:resources="http://www.ibm.com/websphere/appserver/schemas/5.0/resources.xmi" xmlns:resources.mail="http://www.ibm.com/websphere/appserver/schemas/5.0/resources.mail.xmi" xmlns:resources.url="http://www.ibm.com/websphere/appserver/schemas/5.0/resources.url.xmi">
+  <xmi:Documentation>
+    <contact>{Your Contact Info}</contact>
+  </xmi:Documentation>
+  <resources.jms:JMSProvider xmi:id="builtin_jmsprovider" name="WebSphere JMS Provider" description="Built-in WebSphere JMS Provider" externalInitialContextFactory="" externalProviderURL=""/>
+  <resources.jms:JMSProvider xmi:id="builtin_mqprovider" name="WebSphere MQ JMS Provider" description="WebSphere MQ JMS Provider" externalInitialContextFactory="" externalProviderURL="">
+    <classpath>${MQJMS_LIB_ROOT}</classpath>
+    <nativepath>${MQJMS_LIB_ROOT}</nativepath>
+  </resources.jms:JMSProvider>
+  <resources.j2c:J2CResourceAdapter xmi:id="builtin_rra" name="WebSphere Relational Resource Adapter" description="Built-in Relational Resource Adapter for Container Managed Persistence" archivePath="${WAS_LIBS_DIR}/rsadapter.rar">
+    <propertySet xmi:id="J2EEResourcePropertySet_8">
+      <resourceProperties xmi:id="J2EEResourceProperty_31" name="TransactionResourceRegistration" type="java.lang.String" value="dynamic" description="Type of transaction resource registration (enlistment).  Valid values are either &#34;static&#34; (immediate) or &#34;dynamic&#34; (deferred)."/>
+      <resourceProperties xmi:id="J2EEResourceProperty_32" name="InactiveConnectionSupport" type="java.lang.Boolean" value="true" description="Specify whether connection handles support implicit reactivation. (Smart Handle support). Value may be &#34;true&#34; or &#34;false&#34;."/>
+    </propertySet>
+  </resources.j2c:J2CResourceAdapter>
+  <resources.mail:MailProvider xmi:id="builtin_mailprovider" name="Built-in Mail Provider" description="The built-in mail provider">
+    <protocolProviders xmi:id="builtin_smtp" protocol="smtp" classname="com.sun.mail.smtp.SMTPTransport" type="TRANSPORT"/>
+    <protocolProviders xmi:id="builtin_pop3" protocol="pop3" classname="com.sun.mail.pop3.POP3Store" type="STORE"/>
+    <protocolProviders xmi:id="builtin_imap" protocol="imap" classname="com.sun.mail.imap.IMAPStore" type="STORE"/>
+  </resources.mail:MailProvider>
+  <resources.url:URLProvider xmi:id="URLProvider_1" name="Default URL Provider" streamHandlerClassName="unused" protocol="unused"/>
+</xmi:XMI>

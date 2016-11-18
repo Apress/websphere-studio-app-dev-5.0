@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!--  WorkSpace Meta Data for Single Server  -->
+
+<metadata>
+	<metadata-name>SingleServer</metadata-name>
+    <root-context-type></root-context-type>
+    <contexts>
+	    <context>
+	    	<context-name></context-name>
+	    	<child-context-names>
+		    	<child-context-name>cells</child-context-name>
+		    	<child-context-name>templates</child-context-name>
+		    	<child-context-name>config</child-context-name>
+	    	</child-context-names>
+   		</context>
+	    <context>
+	    	<context-name>cells</context-name>
+	    	<root-document-type>Cell</root-document-type>
+	    	<child-document-names>
+		    	<child-document-name>Cell</child-document-name>
+		    	<child-document-name>Admin Authorization</child-document-name>
+		    	<child-document-name>Multi-Broker</child-document-name>
+		    	<child-document-name>Name Store</child-document-name>
+		    	<child-document-name>Naming Authorization</child-document-name>
+		    	<child-document-name>PMI Request Metrics</child-document-name>
+		    	<child-document-name>Security</child-document-name>
+		    	<child-document-name>Variables</child-document-name>
+		    	<child-document-name>Virtual Hosts</child-document-name>
+		    	<child-document-name>Resources</child-document-name>
+		    	<child-document-name>Name Bindings</child-document-name>
+		    	<child-document-name>Library</child-document-name>
+	    	</child-document-names>
+	    	<child-context-names>
+		    	<child-context-name>clusters</child-context-name>
+		    	<child-context-name>nodes</child-context-name>
+		    	<child-context-name>applications</child-context-name>
+	    	</child-context-names>
+   		</context>
+	    <context>
+	    	<context-name>templates</context-name>
+	    	<child-document-names>
+		    	<child-document-name>Template JDBC Resource Provider</child-document-name>
+		    	<child-document-name>Template Server</child-document-name>
+	    	</child-document-names>
+	    	<child-context-names>
+		    	<child-context-name>system</child-context-name>
+		    	<child-context-name>default</child-context-name>
+		    	<child-context-name>custom</child-context-name>
+	    	</child-context-names>
+   		</context>
+	    <context>
+	    	<context-name>system</context-name>
+	    	<child-context-names>
+	    	    <child-context-name>nodes</child-context-name>
+	    	</child-context-names>
+
+	     </context>
+
+	    <context>
+	    	<context-name>default</context-name>
+	    	<child-context-names>
+	    	    <child-context-name>nodes</child-context-name>
+	    	</child-context-names>
+            </context>
+	    <context>
+	    	<context-name>custom</context-name>
+   		</context>
+	    <context>
+	    	<context-name>nodes</context-name>
+	    	<root-document-type>Node</root-document-type>
+	    	<child-document-names>
+		    	<child-document-name>Node</child-document-name>
+		    	<child-document-name>Name Store</child-document-name>
+		    	<child-document-name>Node-Servers</child-document-name>
+		    	<child-document-name>Resources</child-document-name>
+		    	<child-document-name>Variables</child-document-name>
+		    	<child-document-name>Virtual Hosts</child-document-name>
+		    	<child-document-name>Name Bindings</child-document-name>
+		    	<child-document-name>Library</child-document-name>
+	    	</child-document-names>
+	    	<child-context-names>
+		    	<child-context-name>servers</child-context-name>
+	    	</child-context-names>
+   		</context>
+	    <context>
+	    	<context-name>applications</context-name>
+	    	<child-context-names>
+		    	<child-context-name>deployments</child-context-name>
+	    	</child-context-names>
+   		</context>
+	    <context>
+	    	<context-name>deployments</context-name>
+                <root-document-type>Deployment</root-document-type>
+   		</context>
+	    <context>
+	    	<context-name>servers</context-name>
+	    	<root-document-type>Server</root-document-type>
+	    	<child-document-names>
+		    	<child-document-name>Server</child-document-name>
+		    	<child-document-name>Variables</child-document-name>
+		    	<child-document-name>Resources</child-document-name>
+		    	<child-document-name>Security</child-document-name>
+		    	<child-document-name>Name Bindings</child-document-name>
+		    	<child-document-name>Library</child-document-name>
+	    	</child-document-names>
+   		</context>
+	    <context>
+	    	<context-name>config</context-name>
+	    	<child-context-names>
+		    	<child-context-name>cells</child-context-name>
+		    	<child-context-name>templates</child-context-name>
+	    	</child-context-names>
+   		</context>
+	    <context>
+	    	<context-name>modules</context-name>
+   		</context>
+	    <context>
+	    	<context-name>clusters</context-name>
+	    	<root-document-type>Cluster</root-document-type>
+	    	<child-document-names>
+		    	<child-document-name>Cluster</child-document-name>
+	    	</child-document-names>
+   		</context>
+    </contexts>
+	<documents>
+      	<document>
+      		<document-name>Admin Authorization</document-name>
+	      	<file-pattern>admin-authz.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>AuthorizationTableExt</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Admin Authorization Base</child-validator-name>
+	    	  	<child-validator-name>Admin Authorization Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Cell</document-name>
+	      	<file-pattern>cell.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>Cell</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Cell Base</child-validator-name>
+	    	  	<child-validator-name>Cell Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Cluster</document-name>
+	      	<file-pattern>cluster.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>ServerCluster</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Cluster Base</child-validator-name>
+	    	  	<child-validator-name>Cluster Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Multi-Broker</document-name>
+	      	<file-pattern>multibroker.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>MultibrokerDomain</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Multi-Broker Base</child-validator-name>
+	    	  	<child-validator-name>Multi-Broker Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Name Store</document-name>
+	      	<file-pattern>namestore.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>NamingContext</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Name Store Base</child-validator-name>
+	    	  	<child-validator-name>Name Store Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Naming Authorization</document-name>
+	      	<file-pattern>naming-authz.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>AuthorizationTableExt</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Naming Authorization Base</child-validator-name>
+	    	  	<child-validator-name>Naming Authorization Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Node</document-name>
+	      	<file-pattern>node.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>Node</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Node Base</child-validator-name>
+	    	  	<child-validator-name>Node Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Node-Servers</document-name>
+	      	<file-pattern>serverindex.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>ServerIndex</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Node-Servers Base</child-validator-name>
+	    	  	<child-validator-name>Node-Servers Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>PMI Request Metrics</document-name>
+	      	<file-pattern>pmirm.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>PMIRequestMetrics</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>PMI Request Metrics Base</child-validator-name>
+	    	  	<child-validator-name>PMI Request Metrics Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Resources</document-name>
+	      	<file-pattern>resources.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>ResourceEnvironmentProvider</root-refobject-type>
+    	  		<root-refobject-type>JDBCProvider</root-refobject-type>
+    	  		<root-refobject-type>J2CResourceAdapter</root-refobject-type>
+    	  		<root-refobject-type>URLProvider</root-refobject-type>
+    	  		<root-refobject-type>MailProvider</root-refobject-type>
+    	  		<root-refobject-type>JMSProvider</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Resources Base</child-validator-name>
+	    	  	<child-validator-name>Resources Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Security</document-name>
+	      	<file-pattern>security.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>Security</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Security Base</child-validator-name>
+	    	  	<child-validator-name>Security Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Library</document-name>
+	      	<file-pattern>libraries.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>Library</root-refobject-type>
+      		</root-refobject-types>
+	      	<child-validator-names>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Server</document-name>
+	      	<file-pattern>server.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>Server</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Server Base</child-validator-name>
+	    	  	<child-validator-name>Server Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Variables</document-name>
+	      	<file-pattern>variables.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>VariableMap</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Variables Base</child-validator-name>
+	    	  	<child-validator-name>Variables Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Virtual Hosts</document-name>
+	      	<file-pattern>virtualhosts.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>VirtualHost</root-refobject-type>
+      		</root-refobject-types>
+    	  	<child-validator-names>
+	    	  	<child-validator-name>Virtual Hosts Base</child-validator-name>
+	    	  	<child-validator-name>Virtual Hosts Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>Name Bindings</document-name>
+	      	<file-pattern>namebindings.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>EjbNameSpaceBinding</root-refobject-type>
+    	  		<root-refobject-type>CORBAObjectNameSpaceBinding</root-refobject-type>
+    	  		<root-refobject-type>IndirectLookupNameSpaceBinding</root-refobject-type>
+    	  		<root-refobject-type>StringNameSpaceBinding</root-refobject-type>
+      		</root-refobject-types>
+    	</document>
+      	<document>
+      		<document-name>Deployment</document-name>
+	      	<file-pattern>deployment.xml</file-pattern>
+	      	<root-refobject-types>
+    	  		<root-refobject-type>Deployment</root-refobject-type>
+      		</root-refobject-types>
+            <child-validator-names>
+	    	  	<child-validator-name>Deployment Base</child-validator-name>
+                <child-validator-name>Deployment Cross</child-validator-name>
+	      	</child-validator-names>
+    	</document>
+      	<document>
+      		<document-name>JMS Authorization</document-name>
+	      	<file-pattern>integral-jms-authorizations.xml</file-pattern>
+    	</document>
+      	<document>
+      		<document-name>Plugins</document-name>
+	      	<file-pattern>plugin-cfg.xml</file-pattern>
+    	</document>
+      	<document>
+      		<document-name>Template JDBC Resource Provider</document-name>
+	      	<file-pattern>jdbc-resource-provider-templates.xml</file-pattern>
+    	</document>
+      	<document>
+      		<document-name>Security Configuration</document-name>
+	      	<file-pattern>security-cfg.xml</file-pattern>
+    	</document>
+      	<document>
+      		<document-name>Template Server</document-name>
+	      	<file-pattern>template-server-cfg.xml</file-pattern>
+    	</document>
+	</documents>
+	<validators>
+		<validator>
+      		<validator-name>Admin Authorization Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.SecurityValidator</validator-class-name>
+    	  	<validator-description>Admin Authorization Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Admin Authorization Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.SecurityCrossValidator</validator-class-name>
+    	  	<validator-description>Admin Authorization Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Cell Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.CellValidator</validator-class-name>
+    	  	<validator-description>Cell Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Cell Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.CellCrossValidator</validator-class-name>
+    	  	<validator-description>Cell Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Cluster Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.ClusterValidator</validator-class-name>
+    	  	<validator-description>Cluster Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Cluster Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.ClusterCrossValidator</validator-class-name>
+    	  	<validator-description>Cluster Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+        <validator>
+            <validator-name>Deployment Base</validator-name>
+            <validator-class-name>com.ibm.websphere.validation.base.config.DeploymentValidator</validator-class-name>
+            <validator-description>Deployment Base</validator-description>
+            <cross-document>false</cross-document>
+        </validator>
+        <validator>
+            <validator-name>Deployment Cross</validator-name>
+            <validator-class-name>com.ibm.websphere.validation.base.config.DeploymentCrossValidator</validator-class-name>
+            <validator-description>Deployment Cross</validator-description>
+            <cross-document>true</cross-document>
+        </validator>
+		<validator>
+      		<validator-name>Naming Authorization Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.SecurityValidator</validator-class-name>
+    	  	<validator-description>Naming Authorization Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Naming Authorization Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.SecurityCrossValidator</validator-class-name>
+    	  	<validator-description>Naming Authorization Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Multi-Broker Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.MultiBrokerValidator</validator-class-name>
+    	  	<validator-description>Multi-Broker Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Multi-Broker Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.MultiBrokerCrossValidator</validator-class-name>
+    	  	<validator-description>Multi-Broker Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Name Store Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.NameStoreValidator</validator-class-name>
+    	  	<validator-description>Name Store Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Name Store Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.NameStoreCrossValidator</validator-class-name>
+    	  	<validator-description>Name Store Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+<validator>
+<validator-name>Node Base</validator-name>
+<validator-class-name>com.ibm.websphere.validation.base.config.NodeValidator</validator-class-name>
+<validator-description>Node Base</validator-description>
+<cross-document>false</cross-document>
+</validator>
+		<validator>
+      		<validator-name>Node Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.NodeCrossValidator</validator-class-name>
+    	  	<validator-description>Node Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+<validator>
+<validator-name>Node-Servers Base</validator-name>
+<validator-class-name>com.ibm.websphere.validation.base.config.NodeServersValidator</validator-class-name>
+<validator-description>Node-Servers Base</validator-description>
+<cross-document>false</cross-document>
+</validator>
+<validator>
+<validator-name>Node-Servers Cross</validator-name>
+<validator-class-name>com.ibm.websphere.validation.base.config.NodeServersCrossValidator</validator-class-name>
+<validator-description>Node-Servers Cross</validator-description>
+<cross-document>true</cross-document>
+</validator>
+		<validator>
+      		<validator-name>PMI Request Metrics Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.RequestMetricsValidator</validator-class-name>
+    	  	<validator-description>PMI Request Metrics Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>PMI Request Metrics Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.RequestMetricsCrossValidator</validator-class-name>
+    	  	<validator-description>PMI Request Metrics Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Resources Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.ResourcesValidator</validator-class-name>
+    	  	<validator-description>Resources Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Resources Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.ResourcesCrossValidator</validator-class-name>
+    	  	<validator-description>Resources Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Security Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.SecurityValidator</validator-class-name>
+    	  	<validator-description>Security Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+<validator>
+<validator-name>Security Cross</validator-name>
+<validator-class-name>com.ibm.websphere.validation.base.config.SecurityCrossValidator</validator-class-name>
+<validator-description>Security Cross</validator-description>
+<cross-document>true</cross-document>
+</validator>
+		<validator>
+      		<validator-name>Server Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.ServerValidator</validator-class-name>
+    	  	<validator-description>Server Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+			<validator-name>Server Cross</validator-name>
+			<validator-class-name>com.ibm.websphere.validation.base.config.ServerCrossValidator</validator-class-name>
+			<validator-description>Server Cross</validator-description>
+			<cross-document>true</cross-document>
+		</validator>
+		<validator>
+      		<validator-name>Variables Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.VariablesValidator</validator-class-name>
+    	  	<validator-description>Variables Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Variables Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.VariablesCrossValidator</validator-class-name>
+    	  	<validator-description>Variables Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Virtual Hosts Base</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.VirtualHostsValidator</validator-class-name>
+    	  	<validator-description>Virtual Hosts Base</validator-description>
+      		<cross-document>false</cross-document>
+      	</validator>
+		<validator>
+      		<validator-name>Virtual Hosts Cross</validator-name>
+	      	<validator-class-name>com.ibm.websphere.validation.base.config.VirtualHostsCrossValidator</validator-class-name>
+    	  	<validator-description>Virtual Hosts Cross</validator-description>
+      		<cross-document>true</cross-document>
+      	</validator>
+	</validators>
+</metadata>
+

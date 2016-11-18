@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:variables="http://www.ibm.com/websphere/appserver/schemas/5.0/variables.xmi">
+  <xmi:Documentation>
+    <contact>{Your Contact Info}</contact>
+  </xmi:Documentation>
+  <variables:VariableMap xmi:id="VariableMap_1">
+    <entries xmi:id="VariableSubstitutionEntry_1" symbolicName="SERVER_LOG_ROOT" value="${LOG_ROOT}/server1" description="The filesystem path to the directory which will contain server log files."/>
+    <entries xmi:id="VariableSubstitutionEntry_2" symbolicName="SERVER_TEMP_DIR" value="${SERVER_TEMP_DIR_PATH_MAP}"/>
+  </variables:VariableMap>
+</xmi:XMI>

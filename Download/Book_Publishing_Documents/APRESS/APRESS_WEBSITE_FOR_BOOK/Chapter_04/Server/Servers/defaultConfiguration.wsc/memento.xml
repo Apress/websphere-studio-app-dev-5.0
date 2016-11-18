@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webSphere-memento-map
+   CONFIG_MEMENTO_MAP_FILE_KEY_ID="WebSphere V5 Configuration Memento Map File"
+   CONFIG_NAME_KEY_ID="WebSphere v5.0 Server Configuration" server-type="3">
+   <memento-map>
+      <memento-map-entry key="adminconsole.war" value="NON_DEPLOY_PROJECT:admin"/>
+   </memento-map>
+</webSphere-memento-map>

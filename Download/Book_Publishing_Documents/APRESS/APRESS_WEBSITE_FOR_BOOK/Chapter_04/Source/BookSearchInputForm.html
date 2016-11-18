@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM WebSphere Studio">
+
+<TITLE>Enter Book Location</TITLE>
+
+
+<STYLE TYPE="text/css">
+<!--H1
+{text-align: center;
+}
+TH
+{
+text-align:left;}
+-->
+</STYLE>
+</head>
+
+<body>
+<!--Java Script-->      
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+function submitForm(nav){
+   document.myForm.elements["command"].value = nav
+   document.myForm.submit()
+}
+//-->
+</SCRIPT>
+
+<!--Banner-->
+<H1>Enter Book Location</H1>
+      
+<!--Navigation-->
+<FORM name="myForm" method="POST" action="BookSearchController">
+<A href="javascript:submitForm('BookSearchMasterView')">Submit</A>
+
+<BR><BR>
+   
+<!--Hidden Variables-->
+<INPUT TYPE="hidden" NAME="command" VALUE="BookSearchMasterView">
+<INPUT TYPE="hidden" NAME="new_input" VALUE="true">   
+
+<!--Table-->
+<TABLE border="0">
+<TBODY> 
+   <TR>
+      <TH>
+         Book location: 
+      </TH>
+      <TD>
+         <INPUT NAME="LOCATION" TYPE="text" SIZE="35" MAXLENGTH="50" VALUE=""> 
+      </TD>
+   </TR>
+</TBODY>
+</TABLE>
+         
+
+</FORM>
+</body>
+</HTML>

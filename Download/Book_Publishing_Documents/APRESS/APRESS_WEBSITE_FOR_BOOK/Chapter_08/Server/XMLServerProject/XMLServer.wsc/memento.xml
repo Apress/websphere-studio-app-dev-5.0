@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webSphere-memento-map
+   CONFIG_MEMENTO_MAP_FILE_KEY_ID="WebSphere V5 Configuration Memento Map File"
+   CONFIG_NAME_KEY_ID="XMLServer" server-type="3">
+   <memento-map>
+      <memento-map-entry key="XMLProjectWEB.war" value="com.ibm.etools.webtools.server:XMLProjectWEB"/>
+      <memento-map-entry key="XMLProjectApp" value="com.ibm.etools.server.j2ee.ear13:XMLProjectApp"/>
+   </memento-map>
+</webSphere-memento-map>

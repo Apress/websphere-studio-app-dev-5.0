@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pmirm="http://www.ibm.com/websphere/appserver/schemas/5.0/pmirm.xmi">
+  <xmi:Documentation>
+    <contact>{Your Contact Info}</contact>
+  </xmi:Documentation>
+  <pmirm:PMIRequestMetrics xmi:id="PMIRequestMetrics_1" enable="false" enableARM="false" traceLevel="HOPS">
+    <filters xmi:id="PMIRMFilter_1" type="URI" enable="false">
+      <filterValues xmi:id="PMIRMFilterValue_1" value="/servlet/snoop" enable="false"/>
+      <filterValues xmi:id="PMIRMFilterValue_2" value="/webapp/examples/HitCount" enable="false"/>
+    </filters>
+    <filters xmi:id="PMIRMFilter_2" type="EJB" enable="false">
+      <filterValues xmi:id="PMIRMFilterValue_3" value="com.yourco.package.Class.method" enable="false"/>
+      <filterValues xmi:id="PMIRMFilterValue_4" value="com.yourco.package.Class2.*" enable="false"/>
+    </filters>
+    <filters xmi:id="PMIRMFilter_3" type="SOURCE_IP" enable="false">
+      <filterValues xmi:id="PMIRMFilterValue_5" value="255.255.255.255" enable="false"/>
+      <filterValues xmi:id="PMIRMFilterValue_6" value="254.254.254.254" enable="false"/>
+    </filters>
+  </pmirm:PMIRequestMetrics>
+</xmi:XMI>

@@ -1,0 +1,273 @@
+<head>
+<title>Updates for WebSphere Studio Application Developer 5.0 (ISBN: 159059-120-8)</title>
+<style type="text/css">
+body {
+	background-color: #FFF;
+	font-family: Verdana, sans-serif;
+	font-size: 80%;
+}
+</style>
+</head>
+
+<body>
+<h1>Updates for <i>WebSphere Studio Application Developer 5.0  (ISBN: 159059-120-8)</i></h1>
+<p>Thanks for buying&nbsp;our book. We hope you've enjoyed it and found it helpful.</p>
+<p>We'll continue to post updates and corrections here as we find them. If you 
+find additional errors, please tell us about them by sending an email to: 
+<a href="mailto:errata@apress.com">errata@apress.com</a>.</p>
+<p><i>Igor Livshin </i> <P></P>
+
+<h2>Chapter 2—Setting Up the Development Environment</h2>
+<p><b>Page 13</b>. Near the top of the page. Replace :</p>
+<p>net stop DB2 JDBC Applet Server</p><BR>by<BR>
+<p>net stop "DB2 JDBC Applet Server"</p>
+<h2>Chapter 4—Developing Database Application</h2>
+<p><b>Page 65</b>Listing 4-1 near the end of the page. Replace:</p>
+<p>BuildTextbookDatabase.sql.</p>
+<B>by</B>
+<p>BuildTechbookDatabase.sql.</p>
+
+<h2>Chapter 4-Developing Database Application</h2>
+<p><b>Page 65</b> Listing 4-1 near the end of the page. Replace:</p>
+<p>BuildTextbookDatabase.sql.</p>
+<B>by</B>
+<p>BuildTechbookDatabase.sql.</p>
+
+<h2>Chapter 4-Developing Database Application</h2>
+<p><b>Page 98</b>The first centence of the Configuring the Datasource Connection section. Replace:</p>
+<p>DBDatasourceProjectApp</p>
+<B>by</B>
+<p>DBDatasourceServer</p>
+
+<h2>Chapter 4-Developing Database Application</h2>
+<p><b>Page 101</b>. The first centence of the Testing the Application section. Add new text:</p>
+<p>In the Server Configuration view, right-click DBDatasourceServer and select Add->DBDatasourceProjectApp</p>
+
+<h2>Chapter 5-Using EJB Query Language</h2>
+<p><b>Page 110</b>Near the middle of the Listing 5.1. Replace :</p>
+<p>"iiop://localhost/);</p><BR>by<BR>
+<p>"iiop://localhost/)";</p>
+
+<h2>Chapter 5-Using EJB Query Language</h2>
+<p><b>Page 110</b>. Near the middle of the Listing 5.1. Replace :</p>
+<p>.Context</p><BR>by<BR>
+<p>Context</p>
+
+<h2>Chapter 5-Using EJB Query Language</h2>
+<p><b>Page 129</b>Near the top of the page. Replace :</p>
+<p>SELECT Object(a) FROM Book_catalog As o, IN(o.authors) As a</p><BR>by<BR>
+<p>"SELECT Object(a) FROM Book_catalog As o, IN(o.Author)"</p>
+
+<h2>Chapter 5-Understanding Programmatic Security</h2>
+<p><b>Page 181</b>Near the top of the page. Replace:</p>
+<p>java.security.Principal proncipal = request.getRemoteProncipal()</p>
+<B>by</B>
+<p>java.security.Principal principal = request.getUserPrincipal()</p>
+
+<h2>Chapter 6-Developing BMP Entity Beans</h2>
+<p><b>Page 181</b>Near the bottom of the page. Replace:</p>
+<p>Click Browse and enter java.io.Serializable</p>
+<B>by</B>
+<p>Click Add and enter java.io.Serializable</p>
+
+<h2>Chapter 6-Developing CMP Entity Beans</h2>
+<p><b>Page 196</b>Near the bottom of the page. Delete the folowing lines:</p>
+<p>You will use the getter/setter methods for the attribute(s) that form the Primary Key for the bean.
+ With techLibBook_catalogBean still open in the Java Editor View, right-click the getCatalog_number method
+ and select Enterprise Bean ->Promote to the Local Interface. Do the same for the setCatalogNumber mrthod. 
+ Use the same steps to promote Getter/Setter methods for the key attributes (txnDate and txnTime) for TechLibBook_activityBean.</p>
+
+<h2>Chapter 6-Developing BMP Entity Beans</h2>
+<p><b>Page 230</b>Near the bottom of the page. Replace:</p>
+<p>TransportObjectBean</p>
+<B>by</B>
+<p>TransportBean</p>
+
+<h2>Chapter 6-Developing BMP Entity Beans</h2>
+<p><b>Page 231</b>Near the top of the page. Replace:</p>
+<p>TransportObjectBean</p>
+<B>by</B>
+<p>TransportBean</p>
+
+<h2>Chapter 6-Developing BMP Entity Beans</h2>
+<p><b>Page 233</b>Near the middle of the page. Replace:</p>
+<p>(ECN)</p>
+<B>by</B>
+<p>(ENC)</p>
+
+<h2>Chapter 6-Developing BMP Entity Beans</h2>
+<p><b>Page 238</b>Near the middle of the page. Replace:</p>
+<p>where CATALOG_NUMBER=? and</p>
+<B>by</B>
+<p>where COMPANY_NAME=? and</p>
+
+<h2>Chapter 6-Developing BMP Entity Beans</h2>
+<p><b>Page 245</b>lISTING 6-13. Add after: Listing 6-13. BookInquiryKey.java:Primary Key Class:</p>
+<p>NOTE. Please download this source from the APRESS web site. There are important code changes.</p>
+
+<h2>Chapter 6-Developing Statless Session Bean</h2>
+<p><b>Page 259</b>Listing 6-17. Replace:</p>
+<p>Listing 6-17 shows the source code for the TechLibFacadeLocalHome interface.
+TechLibFacadeLocalHome.java -  the Local Home Interface<P></P>
+package apress.wsad.techlib;<BR>
+/**<BR>
+ * Local Home interface for Enterprise Bean: TechLibFacade<BR>
+ */<BR>
+public interface TechLibFacadeLocalHome extends javax.ejb.EJBLocalHome<BR>
+{<BR>
+  /**<BR>
+   * Creates a default instance of Session Bean: TechLibFacade<BR>
+   */<BR>
+   public apress.wsad.techlib.TechLibFacadeLocal create()<BR>
+		throws javax.ejb.CreateException;<BR>
+}<BR>
+</p>
+<B>by</B>
+<p>Listing 6-17 shows the source code for the TechLibFacadeHome interface.<P>
+</p>
+package apress.wsad.techlib;<BR>
+/**<BR>
+ * Home interface for Enterprise Bean: TechLibFacade<BR>
+ */<BR>
+public interface TechLibFacadeHome extends javax.ejb.EJBHome<BR>
+{<BR>
+	/**<BR>
+	 * Creates a default instance of Session Bean: TechLibFacade<BR>
+	 */<BR>
+	public apress.wsad.techlib.TechLibFacade create()<BR>
+		throws javax.ejb.CreateException, java.rmi.RemoteException;<BR>
+}<BR>
+
+</p>
+
+<h2>Chapter 6-Developing Statless Session Bean</h2>
+<p><b>Page 259</b>Listing 6-18.Replace:</p>
+<p>
+TechLibFacadeLocal.java the Local Interface
+package apress.wsad.techlib;
+import javax.ejb.FinderException;
+import java.util.Vector;
+
+/**
+ * Local interface for Enterprise Bean: TechLibFacade
+ */
+public interface TechLibFacadeLocal extends javax.ejb.EJBLocalObject
+{
+  // This business method must be promoted to the remote interface
+  public Vector getBookForPlatform(String workPlatform)
+           throws FinderException;
+}
+
+</p>
+<B>by</B>
+<p>Listing 6-18 shows the source code for the TechLibFacade interface.<P>
+</P>package apress.wsad.techlib;<BR>
+
+import javax.ejb.FinderException;<BR>
+import java.util.Vector;<BR>
+
+/**<BR>
+ * Remote interface for Enterprise Bean: TechLibFacade<BR>
+
+ */<BR>
+
+public interface TechLibFacade extends javax.ejb.EJBObject<BR>
+{<BR>
+
+	// This business method must be promoted to the remote interface<BR>
+	public Vector getBookForPlatform(String workPlatform)<BR>
+		throws FinderException, java.rmi.RemoteException;<BR>
+}<BR>
+
+</p>
+
+<h2>Chapter 6-Developing Stateful Session Bean</h2>
+<p><b>Page 262</b>Near the middle of the page. Replace:</p>
+<p>Work with Objects</p>
+<B>by</B>
+<p>Work with Contained Objects</p>
+
+
+<h2>Chapter 6-Developing Stateful Session Bean</h2>
+<p><b>Page 264</b>Near the middle of the page. Replace:</p>
+<p>apress.wsad.testlib</p>
+<B>by</B>
+<p>apress.wsad.techlib</p>
+
+<h2>Chapter 7- Understanding Stateless Web Session Development</h2>
+<p><b>Page 288</b>On the whole page. Replace:</p>
+<p>BookHelper</p>
+<B>by</B>
+<p>BookReegisterHelper</p>
+
+<h2>Chapter 7-Understanding Stateless Web Session Development</h2>
+<p><b>Page 291</b>Near the bottom of the page. Replace:</p>
+<p>BookHelper</p>
+<B>by</B>
+<p>BookRegisterHelper</p>
+
+<h2>Chapter 7-Understanding Stateless Web Session Development</h2>
+<p><b>Page 293</b>At the top of the page. Replace:</p>
+<p>On the next screen, select Request (you don't  need Session here because this is one-screen processing). Replace:</p>
+<B>by</B>
+<p>On the next screen, ensure that Request is selected  (you don't  need Session here because this is one-screen processing).
+ Also, check the "Create a new front controller" box.</p>
+
+<h2>Chapter 7-Working with WSAD-Generated Files</h2>
+<p><b>Page 297</b>Picture 7-13. Replace:</p>
+<p>BookHelper</p>
+<B>by</B>
+<p>BookRegisterHelper</p>
+
+
+<h2>Chapter 7-Working with WSAD-Generated Files</h2>
+<p><b>Page 298</b>In the middle of the page. Replace:</p>
+<p>web.xmi:</p>
+<B>by</B>
+<p>web.xml</p>
+
+<h2>Chapter 7-Adding the business logic</h2>
+<p><b>Page 302</b>Listing 7-4. Add after: Listing 7-4. BookRegisterController.java Servlet.</p>
+<p>NOTE. Dounload this listing from the APRESS web site. It has some important changes.</p>
+
+<h2>Chapter 7-Developing the Stateful Web Session</h2>
+<p><b>Page 336</b>In Table 7.1 Replace:</p>
+<p>Windows NT/2000   02</p>
+<B>by</B>
+<p>Windows NT/2000   04</p>
+
+<h2>Chapter 7-Developing the Stateful Web Session</h2>
+<p><b>Page 336</b>At the top of the page. Replace:</p>
+<p>Java Class</p>
+<B>by</B>
+<p>Java Source</p>
+
+<h2>Chapter 7-Developing the Stateful Web Session</h2>
+<p><b>Page 341</b>Close to the bottom of the page. Replace:</p>
+<p>remote handle</p>
+<B>by</B>
+<p>local reference</p>
+
+<h2>Chapter 7-Developing the Stateful Web Session</h2>
+<p><b>Page 344</b>Close to the top of the page. Replace:</p>
+<p>calls two private methods</p>
+<B>by</B>
+<p>calls two methods</p>
+
+<h2>Chapter 7-Coding for the Remote Client View</h2>
+<p><b>Page 357</b>Listing 7-13. Replace:</p>
+<p>Listing 7-13. BookByPlatformHelperX.java</p>
+<B>by</B>
+<p>Listing 7-13. BookByPlatformHelperX.java. Note. Download this listing from the APRESS website</p>
+
+</body>
+
+</html>
+
+	</font>
+	
+
+
+
+
+
